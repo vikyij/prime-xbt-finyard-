@@ -21,9 +21,9 @@ const SectionTwo = () => {
       </div>
 
       <section className={BenefitsSection}>
-        {benefitsData.map((data) => {
+        {benefitsData.map((data, index) => {
           return (
-            <div key={data.id}>
+            <div key={index}>
               <img src={data.icon} alt="benefits-icon" />
               <h6>{data.heading}</h6>
               <p
