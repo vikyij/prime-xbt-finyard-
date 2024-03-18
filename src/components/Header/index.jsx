@@ -5,18 +5,6 @@ import { carouselData } from "./data";
 import Button from "../Button";
 import styles from "./header.module.css";
 
-const settings = {
-  dots: true,
-  infinite: true,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  autoplay: true,
-  speed: 1000,
-  cssEase: "linear",
-  swipeToSlide: true,
-  arrows: false,
-};
-
 const Header = () => {
   const {
     carouselWrapper,
@@ -24,9 +12,23 @@ const Header = () => {
     navButton,
     CTAStyle,
     CTAWrapper,
+    carouselIimage,
   } = styles;
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 1000,
+    cssEase: "linear",
+    swipeToSlide: true,
+    arrows: false,
+  };
+
   return (
-    <div className="slider-container">
+    <div>
       <Slider {...settings}>
         {carouselData.map((content) => {
           return (
@@ -53,7 +55,11 @@ const Header = () => {
                   <p className={CTAStyle}>{content.warningText}</p>
                 </div>
               </div>
-              <img src={content.imgUrl} alt="carousel-image" />
+              <img
+                src={content.imgUrl}
+                className={carouselIimage}
+                alt="carousel-image"
+              />
             </div>
           );
         })}

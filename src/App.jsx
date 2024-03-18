@@ -1,6 +1,7 @@
 import Header from "./components/Header";
 import SectionTwo from "./components/SectionTwo";
 import CTASection from "./components/CTASection";
+import Testimonials from "./components/Testimonial";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Header />
       <SectionTwo />
       <CTASection />
+      <Testimonials />
     </>
   );
 }
