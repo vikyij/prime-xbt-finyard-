@@ -1,0 +1,49 @@
+.FooterWrapper {
+  background: #0a0f23;
+  height: 294px;
+  text-align: center;
+  padding: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .FooterWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 150px;
+    text-align: left;
+    height: 147px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .FooterWrapper > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 529px;
+  }
+}
+
+.FooterWrapper p {
+  color: #fff;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  padding: 40px 0px;
+}
+
+.FooterWrapper img {
+  width: 120px;
+}
+
+.FooterWrapper > .legalTermsStyle {
+  cursor: pointer;
+  padding: 0;
+}
+
+.FooterWrapper a {
+  text-decoration: none;
+  color: #fff;
+}

@@ -1,17 +1,20 @@
 import Slider from "react-slick";
 import { testimonialData } from "./data";
 import StarRating from "../StarRating";
+import useMediaQueries from "../../utils/Hooks/useMediaQueries";
 import styles from "./testimonial.module.css";
 
 const Testimonials = () => {
   const { TestimonialWrapper, TopSectionWrapper, ClientTestimonialStyle } =
     styles;
 
+  const { isMobile } = useMediaQueries();
+
   const settings = {
     arrows: false,
     dots: false,
     infinite: true,
-    slidesToShow: 2,
+    slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
     speed: 2000,
@@ -19,6 +22,7 @@ const Testimonials = () => {
     cssEase: "linear",
     centerMode: true,
     centerPadding: "110px",
+    variableWidth: isMobile ? false : true,
     responsive: [
       {
         breakpoint: 1024,
@@ -30,6 +34,7 @@ const Testimonials = () => {
         breakpoint: 768,
         settings: {
           centerMode: false,
+          slidesToShow: 1,
         },
       },
 

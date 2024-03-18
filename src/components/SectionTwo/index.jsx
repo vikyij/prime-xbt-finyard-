@@ -10,7 +10,7 @@ const SectionTwo = () => {
     <section className={SectionTwoWrapper}>
       <div className={SectionHeaderWrapper}>
         <h2>
-          Trusted by <br /> <span> 1,000,000+</span>
+          Trusted by <br /> <span> 1,000,000+ </span>
           {isMobile ? "traders globally" : "people"}
         </h2>
         <p>

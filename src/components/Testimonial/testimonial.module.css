@@ -73,17 +73,17 @@
   width: 322px;
   max-width: 322px;
   padding: 32px;
-  margin: auto 30px;
+  margin: 0 30px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1300px) {
+/* @media screen and (min-width: 768px) and (max-width: 1300px) {
   .ClientTestimonialStyle {
-    width: 400px;
+    width: 400px !important;
     max-width: 400px;
   }
-}
+} */
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 768px) {
   .ClientTestimonialStyle {
     width: 599px;
     max-width: 599px;
