@@ -1,6 +1,6 @@
 import React from "react";
-import StarIcon from "../../assets/star.svg";
-import HalfStarIcon from "../../assets/half-star.svg";
+import StarIcon from "../../assets/images/star.svg";
+import HalfStarIcon from "../../assets/images/half-star.svg";
 
 const StarRating = ({ rating }) => {
   const fullStars = Math.floor(rating);

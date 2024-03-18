@@ -1,0 +1,106 @@
+.BenefitsSectionWrapper {
+  margin: 70px auto;
+}
+.BenefitsHeaderWrapper {
+  margin: 0px auto 48px;
+  width: 339px;
+}
+
+@media screen and (min-width: 768px) {
+  .BenefitsHeaderWrapper {
+    width: 753.606px;
+  }
+}
+
+.BenefitsHeaderWrapper h2 {
+  color: var(--dark-grey);
+  text-align: center;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  margin-bottom: 20px;
+}
+
+.BenefitsHeaderWrapper span {
+  color: var(--primary-blue);
+}
+
+@media screen and (min-width: 768px) {
+  .BenefitsHeaderWrapper h2 {
+    font-size: 50px;
+  }
+}
+
+.BenefitsHeaderWrapper p {
+  color: var(--black);
+  text-align: center;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+@media screen and (min-width: 768px) {
+  .BenefitsHeaderWrapper p {
+    font-size: 20px;
+  }
+}
+
+.BenefitsSection {
+  border-radius: 24px;
+  background: var(--black);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 15px;
+  padding: 50px 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .BenefitsSection {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0px 150px;
+    justify-content: space-evenly;
+  }
+}
+
+.BenefitsSection > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .BenefitsSection > div {
+    width: 300px;
+  }
+}
+
+.BenefitsSection h3 {
+  color: var(--white);
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  margin: 10px 0px 5px;
+}
+
+.BenefitsSection p {
+  color: var(--white);
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  width: 222px;
+  padding-bottom: 15px;
+}
+
+.BenefitsSection hr {
+  color: var(--white);
+}

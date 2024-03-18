@@ -1,9 +1,8 @@
 import Slider from "react-slick";
-import PrimeXBTLogo from "../../assets/PrimeXBT_logo.svg";
-
+import PrimeXBTLogo from "../../assets/images/PrimeXBT_logo.svg";
 import { carouselData } from "./data";
 import Button from "../Button";
-import styles from "./header.module.css";
+import styles from "./header.module.scss";
 
 const Header = () => {
   const {
@@ -21,7 +20,7 @@ const Header = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    speed: 1000,
+    speed: 500,
     cssEase: "linear",
     swipeToSlide: true,
     arrows: false,
@@ -34,7 +33,7 @@ const Header = () => {
           return (
             <div className={carouselWrapper} key={content.id}>
               <nav>
-                <img src={PrimeXBTLogo} alt="PrimeXBT-logo" />
+                <img src={PrimeXBTLogo} alt="PrimeXBT-logo" loading="lazy" />
                 <button className={navButton}>Join Now</button>
               </nav>
               <div className={carouselLeftContent}>
@@ -59,6 +58,7 @@ const Header = () => {
                 src={content.imgUrl}
                 className={carouselIimage}
                 alt="carousel-image"
+                loading="lazy"
               />
             </div>
           );

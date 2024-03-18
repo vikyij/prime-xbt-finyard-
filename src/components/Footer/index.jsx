@@ -1,5 +1,5 @@
-import PrimeXBTLogo from "../../assets/PrimeXBT_logo.svg";
-import styles from "./footer.module.css";
+import PrimeXBTLogo from "../../assets/images/PrimeXBT_logo.svg";
+import styles from "./footer.module.scss";
 
 const Footer = () => {
   const { FooterWrapper, legalTermsStyle } = styles;
@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <section className={FooterWrapper}>
       <div>
-        <img src={PrimeXBTLogo} alt="PrimeXBT-logo" />
+        <img src={PrimeXBTLogo} alt="PrimeXBT-logo" loading="lazy" />
         <p>
           PrimeXBT © 2023. All rights reserved. <br />
           General information:

@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Inter;
+}
+
+.slick-dots {
+  bottom: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .slick-dots {
+    bottom: 15px;
+  }
+}
+
+.slick-dots li {
+  width: 40px;
+  margin: 0 3px;
+}
+
+.slick-dots li button::before {
+  display: none;
+}
+
+.slick-dots li button {
+  width: 40px;
+  height: 0px;
+  padding: 3px;
+  background-color: #8391ad;
+  border-radius: 10px;
+}
+
+.slick-dots li.slick-active {
+  width: 70px;
+}
+
+.slick-dots li.slick-active button {
+  background-color: var(--white);
+  width: 70px;
+}

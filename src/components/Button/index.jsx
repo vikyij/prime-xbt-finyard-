@@ -1,4 +1,4 @@
-import "./button.module.css";
+import "./button.module.scss";
 
 const Button = ({ children }) => {
   return <button>{children}</button>;

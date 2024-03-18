@@ -1,6 +1,5 @@
-import CTABackground from "../../assets/CTA-section-img.png";
 import Button from "../Button";
-import styles from "./cta.module.css";
+import styles from "./cta.module.scss";
 
 const CTASection = () => {
   const { CTAWrapper, CTAWarningStyle } = styles;

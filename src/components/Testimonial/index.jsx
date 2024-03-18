@@ -2,7 +2,7 @@ import Slider from "react-slick";
 import { testimonialData } from "./data";
 import StarRating from "../StarRating";
 import useMediaQueries from "../../utils/Hooks/useMediaQueries";
-import styles from "./testimonial.module.css";
+import styles from "./testimonial.module.scss";
 
 const Testimonials = () => {
   const { TestimonialWrapper, TopSectionWrapper, ClientTestimonialStyle } =
@@ -64,7 +64,7 @@ const Testimonials = () => {
           return (
             <div key={data.id} className={ClientTestimonialStyle}>
               <div>
-                <img src={data.clientLogo} alt="client-logo" />
+                <img src={data.clientLogo} alt="client-logo" loading="lazy" />
                 <StarRating rating={data.rating} />
               </div>
               <p>{data.testimony}</p>

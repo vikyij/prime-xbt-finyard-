@@ -1,8 +1,3 @@
-import carouselOneImage from "../../assets/carousel-img-1.svg";
-import carouselTwoImage from "../../assets/carousel-img-2.svg";
-import carouselThreeImage from "../../assets/carousel-img-3.svg";
-import carouselFourImage from "../../assets/carousel-img-4.svg";
-
 export const carouselData = [
   {
     id: 1,

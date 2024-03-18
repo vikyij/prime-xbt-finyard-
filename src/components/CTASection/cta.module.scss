@@ -1,0 +1,63 @@
+.CTAWrapper {
+  background: url("../../assets/images/CTA-section-img.png") center no-repeat;
+  background-size: cover;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 7px;
+  text-align: center;
+  margin: 30px auto;
+}
+
+@media screen and (min-width: 768px) {
+  .CTAWrapper {
+    padding: 60px 0px 30px;
+  }
+}
+
+.CTAWrapper > h3 {
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  width: 300px;
+}
+
+@media screen and (min-width: 768px) {
+  .CTAWrapper > h3 {
+    width: 100%;
+  }
+}
+
+.CTAWrapper > p {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  margin: 20px auto;
+}
+
+@media screen and (min-width: 768px) {
+  .CTAWrapper > p {
+    margin: 20px auto 30px;
+    width: 753.606px;
+  }
+}
+
+.CTAWrapper > div {
+  text-align: center;
+}
+
+.CTAWrapper span {
+  color: var(--primary-blue);
+}
+
+.CTAWarningStyle {
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  margin-top: 20px;
+}

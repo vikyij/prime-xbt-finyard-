@@ -1,6 +1,6 @@
-import FXempireLogoOne from "../../assets/FXempire-logo.svg";
-import FXempireLogoTwo from "../../assets/FXempire-logo2.svg";
-import ProductHuntLogo from "../../assets/product-hunt-logo.svg";
+import FXempireLogoOne from "../../assets/images/FXempire-logo.svg";
+import FXempireLogoTwo from "../../assets/images/FXempire-logo2.svg";
+import ProductHuntLogo from "../../assets/images/product-hunt-logo.svg";
 
 export const testimonialData = [
   {
