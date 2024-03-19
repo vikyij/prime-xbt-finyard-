@@ -152,13 +152,12 @@ nav > img {
 }
 
 .carouselIimage {
-  max-width: 100%;
-  height: auto;
+  min-width: 516px;
+  height: 600px;
   width: 100%;
 
-  /* remove this when you get mobile image */
-  @media screen and (max-width: 1024px) {
-    max-width: fit-content;
-    width: fit-content;
+  @media screen and (min-width: 1024px) {
+    max-width: 100%;
+    height: auto;
   }
 }
